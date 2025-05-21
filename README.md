@@ -1,32 +1,70 @@
-# Introducing JOI Energy
+# Getting Started with Create React App
 
-JOI Energy is a new start-up in the energy industry. They provide their customers with smart meters that record their
-energy usage, enabling them to save both money and the environment. The smart meters also record the energy that
-a customer feeds back into the power grid via solar panels installed on their property.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-You have been placed into the development team, whose current goal is to build a dashboard which will display the information gathered from the smart meters.
+## Available Scripts
 
-Unfortunately, two members of the team are on annual leave, and another one has called in sick! You are left with
-another ThoughtWorker to progress with the current user stories. This is your chance to make an impact on the business, improve the code base and deliver value.
+In the project directory, you can run:
 
-## Requirements
+### `npm start`
 
-The project requires [Node v18](https://nodejs.org/en/download/) or higher.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Styling
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-The application uses a "utility" CSS pattern from [BassCSS](https://basscss.com/).
+### `npm test`
 
-### Run the application
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-```console
-$ npm start
-```
+### `npm run build`
 
-The application will launch at `http://localhost:8080`.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Run the tests
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-```console
-$ npm test
-```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
