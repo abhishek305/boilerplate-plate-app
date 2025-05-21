@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e0f2fe; /* Light blue background */
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-start; Remove this to allow content to push down */
+  min-height: 100vh;
+  padding-top: 20px; /* Add some padding at the top */
+}
+
+.phone-directory-container {
+  width: 100%;
+  max-width: 600px; /* Was max-w-xl */
+  margin: 0 auto;
+  padding: 16px; /* Was p-4 */
+  background-image: linear-gradient(to bottom, #60a5fa, #93c5fd); /* Was from-blue-400 to-blue-200 */
+  border-radius: 12px; /* Was rounded-xl */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Was shadow-lg */
+  /* min-height: calc(100vh - 40px); Ensure it takes up height but respects padding */
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px; /* Was mb-4 */
+}
+
+.header h1 {
+  color: white;
+  font-size: 1.25rem; /* Was text-xl */
+  font-weight: bold;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* Was grid-cols-2 */
+  gap: 16px; /* Was gap-4 */
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Was space-y-3 (approx) */
+}
+
+.user-card {
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb; /* Default background */
+  border-radius: 8px;
+  padding: 16px; /* p-4 in CardContent */
+}
+
+.user-card:hover {
+  background-color: #dbeafe; /* Was hover:bg-blue-100 */
+}
+
+.user-card.selected {
+  background-color: #dbeafe; /* Was bg-blue-100 */
+}
+
+.user-card h2 {
+  font-weight: 600; /* Was font-semibold */
+  font-size: 1.125rem; /* Was text-lg */
+  color: #1f2937; /* Was text-gray-800 */
+  margin: 0 0 4px 0;
+}
+
+.user-card p {
+  font-size: 0.875rem; /* Was text-sm */
+  color: #4b5563; /* Was text-gray-600 */
+  margin: 0;
+}
+
+.details-card {
+  padding: 16px; /* Was p-4 */
+  border-radius: 16px; /* Was rounded-2xl */
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06); /* Was shadow-inner */
+  background-color: white;
+  height: fit-content; /* To make it not stretch unnecessarily */
+}
+
+.details-card .icon-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px; /* Was mb-4 */
+}
+
+.details-card .icon-center svg { /* Style for SVGs if used */
+    width: 40px;
+    height: 40px;
+    color: #3b82f6; /* text-blue-500 */
+}
+
+
+.details-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Was space-y-2 (approx) */
+}
+
+.details-content .label {
+  font-size: 0.875rem; /* Was text-sm */
+  color: #6b7280; /* Was text-gray-500 */
+  font-weight: 500; /* Was font-medium */
+  margin: 0;
+}
+
+.details-content .value {
+  font-weight: 600; /* Was font-semibold for name */
+  font-size: 1.125rem; /* Was text-lg for name */
+  color: #1f2937; /* Was text-gray-800 for name */
+  margin:0;
+}
+.details-content .value-regular {
+  color: #374151; /* Was text-gray-700 */
+  font-size: 1rem;
+   margin:0;
+}
+
+
+.details-footer-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px; /* Was mt-6 */
+}
+.details-footer-icon svg { /* Style for SVGs if used */
+    width: 32px;
+    height: 32px;
+    color: #93c5fd; /* text-blue-400 */
+}
+
+
+.placeholder-text {
+  color: #4b5563; /* Was text-gray-600 */
+  font-size: 0.875rem; /* Was text-sm */
+}
+
+/* Basic Button Style */
+.custom-button {
+  display: inline-flex; /* Was flex */
+  align-items: center;
+  gap: 8px; /* Was gap-2 */
+  padding: 8px 16px;
+  background-color: #3b82f6; /* Default blue */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.custom-button:hover {
+  background-color: #2563eb;
+}
+.custom-button svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* Basic Input Style */
+.custom-input {
+  width: calc(100% - 20px); /* Full width minus padding */
+  border-radius: 9999px; /* Was rounded-full */
+  padding: 8px 16px; /* Was px-4 py-2 */
+  margin-bottom: 16px; /* Was mb-4 */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Was shadow-sm */
+  border: 1px solid #d1d5db;
+}
+.custom-input:focus {
+    outline: 2px solid #60a5fa;
+    border-color: transparent;
+}
